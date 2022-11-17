@@ -15,11 +15,9 @@ form.addEventListener("submit", (event) => {
     console.log(logedIn);
     form.reset();
   } else if (email.value == "" || password.value == "") {
-    alert("At least one of the form windows is empty! All windows should be filled in");
-    form.reset();
-  } else if (email.value == userEmail && password.value != userPassword) {
-    alert("Incorrect login or password");
-    console.log("Someone was trying to break in to your account");
+    alert(
+      "At least one of the form windows is empty! All windows should be filled in"
+    );
     form.reset();
   } else {
     alert("Incorrect login or password");
