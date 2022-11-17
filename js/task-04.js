@@ -3,7 +3,7 @@ let counterDisplay = document.querySelector("#value");
 let decrementCounter = document.querySelector('[data-action="decrement"]');
 let incrementCounter = document.querySelector('[data-action="increment"]');
 
-let counterValue = 0;
+let counterValue = parseInt(counterDisplay.innerText);
 
 updateDisplay();
 

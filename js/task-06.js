@@ -10,7 +10,7 @@ let invalidInput = () => {
   inputForm.classList.remove("valid");
 };
 inputForm.addEventListener("blur", () => {
-  if (attributeValue == inputForm.value.trim().length) {
+  if (parseInt(attributeValue) === inputForm.value.trim().length) {
     validInput();
   } else {
     invalidInput();

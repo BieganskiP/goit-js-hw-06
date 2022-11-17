@@ -9,10 +9,9 @@ const handleEmptyInput = () => {
 };
 
 inputText.addEventListener("input", () => {
-  if (inputText.value == 0) {
+  if (inputText.value == "") {
     handleEmptyInput();
   } else {
     handleInput();
   }
 });
-

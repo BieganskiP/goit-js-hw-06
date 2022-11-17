@@ -10,7 +10,7 @@ form.addEventListener("submit", (event) => {
     elements: { email, password },
   } = event.currentTarget;
 
-  if (email.value == userEmail && password.value == userPassword) {
+  if (email.value != "" && password.value != "") {
     logedIn = { email: email.value, password: password.value };
     console.log(logedIn);
     form.reset();
@@ -18,10 +18,5 @@ form.addEventListener("submit", (event) => {
     alert(
       "At least one of the form windows is empty! All windows should be filled in"
     );
-    form.reset();
-  } else {
-    alert("Incorrect login or password");
-    console.log("Incorrect login or password");
-    form.reset();
   }
 });
