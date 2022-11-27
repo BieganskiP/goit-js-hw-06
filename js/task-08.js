@@ -1,7 +1,5 @@
 const form = document.querySelector("form");
 
-const userEmail = "bieganski1996@gmail.com";
-const userPassword = "helloWorld123";
 let logedIn = {};
 
 form.addEventListener("submit", (event) => {
