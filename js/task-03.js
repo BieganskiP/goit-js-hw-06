@@ -31,6 +31,6 @@ const list = document.querySelector(".gallery");
 images.forEach((image) =>
   list.insertAdjacentHTML(
     "beforeend",
-    `<li><img src="${image.url}" alt="${image.alt}"></img></li>`
+    `<li><img src="${image.url}" alt="${image.alt}"/></li>`
   )
 );

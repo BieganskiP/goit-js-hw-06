@@ -4,3 +4,7 @@ listItems.forEach((element) => {
   console.log("Category: " + element.querySelector("h2").innerText);
   console.log("Elements: " + element.querySelectorAll("li").length);
 });
+
+
+
+
